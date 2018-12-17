@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "607808174820",
+    "firebase_url": "https://fir-gtm-ebf56.firebaseio.com",
+    "project_id": "fir-gtm-ebf56",
+    "storage_bucket": "fir-gtm-ebf56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607808174820:android:327c544b2d59cae9",
+        "android_client_info": {
+          "package_name": "br.com.zoly.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607808174820-mpfjbcdghbjo547qdehn8b0fchk9gqmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.zoly.firebase",
+            "certificate_hash": "5a466b525444bb664d8ed28ea8b2af6cd65f82bf"
+          }
+        },
+        {
+          "client_id": "607808174820-mee178c422tcln09s80kkddd8efb0hq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAolETCEkrvm_W8R9cPbaZXMfnmFTeq68s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607808174820-mee178c422tcln09s80kkddd8efb0hq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
