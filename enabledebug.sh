@@ -2,9 +2,10 @@
 
 cmd1="shell setprop debug.firebase.analytics.app br.com.zoly.firebase"
 cmd2="shell setprop log.tag.FA VERBOSE"
-run="run:\nadb $cmd1\nadb $cmd2"
+cmd3="shell setprop log.tag.GAv4 DEBUG"
+run="run:\nadb $cmd1\nadb $cmd2\nadb $cmd3"
 
-which locate 2>\&1 > /dev/null
+which locate > /dev/null 2>&1
 if [[ $? -ne 0 ]]; then
     echo -e $run;
     exit 1;
@@ -34,6 +35,17 @@ $run 2> /dev/null;
 if [[ $? -ne 0 ]]; then
     echo " - Error";
     exit 3;
+fi
+
+echo " - OK"
+
+run="$adb $cmd3";
+echo -n "$run";
+
+$run 2> /dev/null;
+if [[ $? -ne 0 ]]; then
+    echo " - Error";
+    exit 4;
 fi
 
 echo " - OK"
